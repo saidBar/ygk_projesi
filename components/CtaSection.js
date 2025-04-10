@@ -19,42 +19,7 @@ export default function CtaSection({ onDownloadClick }) {
                 >
                   Download Now
                 </button>
-                <a
-                  href="#features"
-                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-800 bg-opacity-30 hover:bg-opacity-40 shadow-lg transform transition duration-200 hover:scale-105"
-                >
-                  Learn More
-                </a>
-              </div>
-            </div>
-            <div className="mt-10 lg:mt-0 lg:pl-8">
-              <div className="bg-white rounded-lg shadow-xl p-6">
-                <h3 className="text-lg font-medium text-gray-900">Join our newsletter</h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Stay updated with the latest features, tips, and special offers.
-                </p>
-                <form className="mt-4">
-                  <div>
-                    <label htmlFor="email-address" className="sr-only">Email address</label>
-                    <input
-                      id="email-address"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      required
-                      className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:placeholder-gray-400"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                  <div className="mt-3">
-                    <button
-                      type="submit"
-                      className="w-full flex items-center justify-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                    >
-                      Subscribe
-                    </button>
-                  </div>
-                </form>
+                
               </div>
             </div>
           </div>
