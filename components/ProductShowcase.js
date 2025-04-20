@@ -8,9 +8,9 @@ export default function ProductShowcase() {
 
   const handleGettingStartedClick = () => {
     if (user) {
-      router.push('/download');  // Redirect to download page if logged in
+      router.push('/download'); // Redirect to download page if logged in
     } else {
-      router.push('/login');  // Redirect to login/signup page if not logged in
+      router.push('/login'); // Redirect to login/signup page if not logged in
     }
   };
 
@@ -24,34 +24,29 @@ export default function ProductShowcase() {
               <span className="block text-blue-600">Product</span>
             </h1>
             <p className="mt-6 text-lg text-gray-500 max-w-3xl">
-              {/* REPLACE: Your product description */}
               A revolutionary solution that transforms how you work. Our product helps you save time, increase productivity, and achieve better results with less effort.
             </p>
-            
-            <div className="mt-8 sm:flex">
-              <div className="rounded-md shadow">
-                <button
-                  onClick={handleGettingStartedClick}
-                  className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
-                >
-                  Getting Started
-                </button>
-              </div>
-              <div className="mt-3 sm:mt-0 sm:ml-3">
-                <a
-                  href="#features"
-                  className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-                >
-                  Learn More
-                </a>
-              </div>
+
+            {/* ✅ Fixed button layout using flex + gap */}
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <button
+                onClick={handleGettingStartedClick}
+                className="flex items-center justify-center px-8 py-3 md:px-10 md:py-4 text-base md:text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow"
+              >
+                Getting Started
+              </button>
+              <a
+                href="#features"
+                className="flex items-center justify-center px-8 py-3 md:px-10 md:py-4 text-base md:text-lg font-medium !text-blue-600 bg-white hover:bg-blue-50 border border-blue-600 rounded-md"
+              >
+                Learn More
+              </a>
             </div>
           </div>
 
           {/* Product Image */}
           <div className="mt-12 lg:mt-0 lg:col-span-6 xl:col-span-7">
             <div className="w-full h-full overflow-hidden">
-              {/* REPLACE: Add your product image here */}
               <img
                 src="/images/product-image.jpg"
                 alt="Product Image"
