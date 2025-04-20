@@ -15,10 +15,10 @@ A modern web app built with **Next.js**, **Firebase Authentication**, and **Tail
 
 ## Features
 
-- ✅ Responsive product landing page
-- 🔐 Firebase email/password login & signup
-- ✨ Smooth UI with Tailwind styling
-- ⚡ Fast, modern frontend architecture
+-  Responsive product landing page
+-  Firebase email/password login & signup
+-  Smooth UI with Tailwind styling
+-  Fast, modern frontend architecture
 
 ---
 
