@@ -1,6 +1,7 @@
 // components/ProductShowcase.js
 import { useRouter } from 'next/router';
 import { useAuth } from '../lib/auth';
+import Image from 'next/image';
 
 export default function ProductShowcase() {
   const { user } = useAuth();
@@ -47,10 +48,13 @@ export default function ProductShowcase() {
           {/* Product Image */}
           <div className="mt-12 lg:mt-0 lg:col-span-6 xl:col-span-7">
             <div className="w-full h-full overflow-hidden">
-              <img
+              <Image
                 src="/images/product-image.jpg"
                 alt="Product Image"
                 className="w-full h-auto object-cover"
+                width={800} // Replace with the actual width of your image
+                height={600} // Replace with the actual height of your image
+                priority // Optional: Use this for images critical to page load
               />
             </div>
           </div>
